@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "../../../../public/logos/logo.png";
-import avatar from "../../../../public/avatar/avatar.png";
+import logo from "../../../../public/logos/logo.png"
 import { FaStar } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaChevronDown } from "react-icons/fa";
@@ -83,7 +82,7 @@ export default function Headers() {
             <a href="">Register</a>
             <button onClick={() => setShowLogin(!showLogin)}>Sing in</button>
             {showLogin && (
-              <div className="absolute -left-20 top-7 bg-gray-700 p-2 rounded-lg shadow-2xl">
+              <div className="absolute z-10 -left-20 top-7 bg-gray-700 p-2 rounded-lg shadow-2xl">
                 <Login setUser={setUser} />
               </div>
             )}
